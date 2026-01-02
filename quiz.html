@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz King India</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Quiz King India</h1>
+
+  <div class="top">
+    <span id="qcount"></span>
+    <span id="timer">⏱️ 10</span>
+    <span id="score">Score: 0</span>
+  </div>
+
+  <h3 id="question"></h3>
+
+  <div class="options">
+    <button onclick="checkAnswer(0)" id="opt0"></button>
+    <button onclick="checkAnswer(1)" id="opt1"></button>
+    <button onclick="checkAnswer(2)" id="opt2"></button>
+    <button onclick="checkAnswer(3)" id="opt3"></button>
+  </div>
+
+  <p id="result"></p>
+
+  <button id="nextBtn" onclick="nextQuestion()">Next</button>
+  <button id="restartBtn" onclick="restartQuiz()">Restart Quiz</button>
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
